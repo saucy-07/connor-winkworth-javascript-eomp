@@ -3,9 +3,9 @@
 }
 
 body {
-    min-height: 100vh;
-    margin: 0px;
-    padding: 0px;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
 }
 
 .nav-div {
@@ -53,11 +53,18 @@ body {
 }
 
 .nav-links ul li button {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   height: 30px;
   width: 90px;
   border: none;
   border-radius: 20px;
   background-color: #e3ccae;
+}
+
+.nav-links ul li button:hover {
+  background-color: #ffedd4;
+  scale: 110%;
 }
 
 main {
@@ -66,27 +73,27 @@ main {
 }
 
 .main-banner {
-  height: 900px;
   background-image: url(/images/Mouse-look-at-you-book-coffee_1920x1200.jpg);
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: left;
   margin: 0px;
-  padding: 0px;
+  padding-bottom: 30%;
 }
 
 .main-banner h1 {
   font-size: 120px;
-  color: #e3ccae;
+  color: white;
   margin: 10px;
   padding: 5px;
 }
 
 .main-banner h3 {
   font-size: 40px;
-  color: #e3ccae;
+  color: white;
   margin: 10px;
   padding: 5px;
 }
@@ -98,41 +105,235 @@ main {
 }
 
 .products-heading {
-    text-align: center;
+  text-align: center;
+  color: white;
 }
 
 .copyright-div {
-    background-color: #2B2B2B;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
+  background-color: #2b2b2b;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .copyright-div p {
-    text-align: center;
-    margin: 0px;
-    padding-top: 10px;
-    color: white;
+  text-align: center;
+  margin: 0px;
+  padding-top: 10px;
+  color: white;
 }
 
 .bottom-banner {
-    background-color: #000000;
-    color: white;
-    display: flex;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
-.contact-div, .socials-div, .message-div {
-    margin: 10px;
-    padding: 10px;
+.contact-div,
+.socials-div,
+.admin-div {
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
 }
 
-.message-div {
-    display: flex;
-    flex-direction: column;
+.socials-div {
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-div img {
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.socials-div img:hover {
+  scale: 110%;
+}
+
+.admin-div li {
+  list-style: none;
+}
+
+.admin-div li button {
+  outline: none;
+  border-style: none;
+  height: 30px;
+  width: 60px;
+  border-radius: 15px;
+  background-color: #e3ccae;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.admin-div li button:hover {
+  scale: 110%;
+  background-color: #ffedd4;
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.form-container {
+  background-color: #262a56;
+  height: 90%;
+}
+
+.contact-title h1 {
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.form-div {
+  padding: 20px;
+  display: flex;
+  background-color: #262a56;
+  height: 80%;
+}
+
+.form-div label {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.form-div input {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #353966;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-div button {
+  background-color: #e3ccae;
+  outline: none;
+  border: none;
+  height: 30px;
+  width: 60px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.form-div button:hover {
+  background-color: #ffedd4;
+  scale: 110%;
+}
+
+.form-div .contact-image-div img {
+  height: 400px;
+  width: 400px;
+}
+
+.about-container {
+  background-color: #262a56;
+  color: white;
+}
+
+.about-container .about-title h1 {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.about-container-inner-image img {
+  margin: 10px;
+  padding: 10px;
+  height: 400px;
+  width: 400px;
+}
+
+.about-container-inner {
+  display: flex;
+}
+
+.about-text h4 {
+  font-size: 30px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.about-text p {
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .form-div input {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #353966;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-div label {
+    color: white;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
-    margin: 0px;
+    margin-bottom: 5px;
+  }
+
+  .contact-title h1 {
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .form-div .contact-image-div img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .about-container .about-title h1 {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .about-container-inner-image img {
+    margin: 10px;
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+  }
+
+  .about-text h4 {
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .about-text p {
+    font-size: 15px;
+    padding: 5px;
+    margin: 10px;
+  }
 }
