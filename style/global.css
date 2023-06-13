@@ -276,8 +276,7 @@ footer {
   margin: 10px;
 }
 
-@media only screen and (max-width: 700px) {
-
+@media only screen and (max-width: 800px) {
   .form-div input {
     margin-bottom: 5px;
     margin-top: 5px;
@@ -330,10 +329,195 @@ footer {
     padding: 10px;
     margin: 10px;
   }
-  
+
   .about-text p {
     font-size: 15px;
     padding: 5px;
     margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-div img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .logo-name-div p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 10px;
+  }
+
+  .nav-div {
+    height: 50px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    align-items: center;
+    float: right;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-links ul {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+
+  .nav-links ul li button {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    height: 20px;
+    width: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e3ccae;
+    font-size: 8px;
+  }
+
+  .main-banner h1 {
+    font-size: 50px;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .products-heading {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+  }
+
+  .bottom-banner {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .socials-div img {
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .contact-div,
+  .socials-div,
+  .admin-div {
+    margin: 3px;
+    padding: 2px;
+    width: fit-content;
+    text-align: center;
+  }
+
+  .admin-div li button {
+    font-size: 8px;
+    outline: none;
+    border-style: none;
+    height: 20px;
+    width: 40px;
+    border-radius: 15px;
+    background-color: #e3ccae;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .form-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-div input {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #353966;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-div label {
+    color: white;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+
+  .form-div button {
+    font-size: 8px;
+    background-color: #e3ccae;
+    outline: none;
+    border: none;
+    height: 20px;
+    width: 40px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .contact-title h1 {
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .form-div .contact-image-div img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .about-container .about-title h1 {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .about-container-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-container-inner {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-container-inner-image img {
+    margin: 5px;
+    padding: 5px;
+    height: 150px;
+    width: 150px;
+  }
+
+  .about-text h4 {
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .about-text p {
+    font-size: 10px;
+    padding: 5px;
+    margin: 5px;
   }
 }
