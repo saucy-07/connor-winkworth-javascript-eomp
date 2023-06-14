@@ -213,13 +213,59 @@ function displayBooks() {
 
 displayBooks();
 
-let cart = [];
+let cartItems = document.getElementById("cartItems");
+let totalPrice = document.getElementById("totalPrice");
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+cartRefresh();
+
+
+function renderItems() {
+  cartItems.innerHTML = "";
+  cart.forEach((item) => {
+    cartItems.innerHTML += `
+    <div class="cart-item-div">
+    <div class="item-details">
+    <h4>${item.title}</h4>
+    </div>
+    <div class="item-price">
+    <h4>R${item.rands}</h4>
+    </div>
+    <div class="remove-button-div">
+    <button onclick="removeItem(${item.id})">&#10006;</button>
+    </div>
+    </div>
+    `;
+  });
+};
 
 function addToCart(id) {
   const item = books.find((book) => book.id === id);
   console.log(cart);
   cart.push(item);
-}
+  cartRefresh();
+};
+
+function cartRefresh() {
+  renderItems();
+  addCost();
+  localStorage.setItem("cart", JSON.stringify(cart));
+};
+
+function addCost() {
+  let totalCost = 0;
+
+  cart.forEach((item) => {
+    totalCost += item.rands;
+  });
+
+  totalPrice.innerHTML = `R${totalCost.toFixed(2)}`;
+};
+
+function removeItem(id) {
+  cart = cart.filter((item) => item.id !== id);
+
+  cartRefresh();
+};
 
 var modal = document.getElementById("modal");
 var btn = document.getElementById("basketLogo");

@@ -324,7 +324,7 @@ footer {
 .modal-body {
   background-color: rgb(227, 255, 246);
   width: 50%;
-  height: 30%;
+  height: max-content;
 }
 
 .modal-heading {
