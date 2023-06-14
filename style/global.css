@@ -276,6 +276,127 @@ footer {
   margin: 10px;
 }
 
+.products-container {
+  background-color: #262a56;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-title-div {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 60px;
+}
+
+.basket-sort-div ul {
+  display: flex;
+}
+
+.basket-sort-div ul li {
+  list-style: none;
+}
+
+.basket-sort-div ul li button {
+  height: 40px;
+  width: 40px;
+}
+
+.basket-sort-div ul li img {
+  height: 40px;
+  width: 40px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-body {
+  background-color: rgb(227, 255, 246);
+  width: 50%;
+  height: 30%;
+}
+
+.modal-heading {
+  padding: 5px;
+  margin: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.products-display-div {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.book-block {
+  background-color: #e6f0f0;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  height: 425px;
+}
+
+.book-image-div {
+  justify-content: center;
+  align-items: center;
+}
+
+.book-image-div img {
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 200px;
+}
+
+.book-title-div, .book-author-div, .book-genre-div, .book-price-div, .cart-button-div {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.book-title-div h4, .book-author-div h4, .book-genre-div h4, .book-price-div h4 {
+  margin: 5px;
+}
+
+.price-cart-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-button-div button {
+  background-color: rgb(255, 255, 0);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.cart-button-div button:hover {
+  background-color: rgb(255, 182, 55);
+}
+
 @media only screen and (max-width: 800px) {
   .form-div input {
     margin-bottom: 5px;
