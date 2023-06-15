@@ -277,6 +277,8 @@ footer {
 }
 
 .products-container {
+  display: flex;
+  flex-direction: column;
   background-color: #262a56;
   justify-content: center;
   align-items: center;
@@ -323,8 +325,14 @@ footer {
 
 .modal-body {
   background-color: rgb(227, 255, 246);
-  width: 50%;
+  width: 70%;
   height: max-content;
+}
+
+.cart-item-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .modal-heading {
@@ -340,14 +348,15 @@ footer {
 }
 
 .products-display-div {
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
 .book-block {
+  display: flex;
+  flex-direction: column;
   background-color: #e6f0f0;
   justify-content: center;
   align-items: center;
@@ -397,6 +406,56 @@ footer {
   background-color: rgb(255, 182, 55);
 }
 
+@media only screen and (max-width: 1500px) {
+  .products-display-div {
+  
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .products-display-div {
+  
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .book-block {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6f0f0;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 425px;
+  }
+
+  .book-image-div img {
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 200px;
+  }  
+
+  .products-title-div {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .products-title-div h4 {
+    margin: 0px;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .form-div input {
     margin-bottom: 5px;
@@ -431,7 +490,7 @@ footer {
     width: 300px;
   }
 
-  .about-container .about-title h1 {
+  .about-container .about-title h1, .products-title-div {
     margin: 10px;
     padding: 10px;
     text-align: center;
@@ -456,9 +515,28 @@ footer {
     padding: 5px;
     margin: 10px;
   }
+
+  .products-title-div {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .products-title-div h4 {
+    margin: 0px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .products-display-div {
+  
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
   .logo-div img {
     height: 40px;
     width: 40px;
@@ -641,4 +719,32 @@ footer {
     padding: 5px;
     margin: 5px;
   }
+
+  .products-title-div h4 {
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .book-block {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #e6f0f0;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    width: 130px;
+    height: 205px;
+  }
+
+  .book-image-div img {
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 60px;
+  }  
 }

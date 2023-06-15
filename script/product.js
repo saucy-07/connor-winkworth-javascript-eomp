@@ -1,6 +1,6 @@
 let books = [
   {
-    id: 1,
+    id: (Math.random()),
     image:
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654565596i/45154547.jpg",
     title: "A Desolation Called Peace",
@@ -9,7 +9,7 @@ let books = [
     rands: 499.99,
   },
   {
-    id: 2,
+    id: (Math.random()),
     image:
       "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1626710416l/58446227.jpg",
     title: "Sea of Tranquility",
@@ -18,7 +18,7 @@ let books = [
     rands: 349.99,
   },
   {
-    id: 3,
+    id: (Math.random()),
     image:
       "https://booklounge.co.za/wp-content/uploads/2023/05/eyes-of-the-voic.jpg",
     title: "Eyes of the Void",
@@ -27,7 +27,7 @@ let books = [
     rands: 249.99,
   },
   {
-    id: 4,
+    id: (Math.random()),
     image:
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1627483822i/57850265.jpg",
     title: "How High We Go in the Dark",
@@ -36,16 +36,16 @@ let books = [
     rands: 349.99,
   },
   {
-    id: 5,
+    id: (Math.random()),
     image:
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1631539191i/40864030.jpg",
-    title: "A Prayer for the Crown-Shy: A Monk and Robot Book",
+    title: "A Prayer for the Crown-Shy",
     author: "Becky Chambers",
     genre: "Science Fiction",
     rands: 359.99,
   },
   {
-    id: 6,
+    id: (Math.random()),
     image:
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1652627981i/60784359.jpg",
     title: "Exiles",
@@ -54,7 +54,7 @@ let books = [
     rands: 349.99,
   },
   {
-    id: 7,
+    id: (Math.random()),
     image:
       "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1675644340l/60833953.jpg",
     title: "Going Zero: A Novel",
@@ -63,7 +63,7 @@ let books = [
     rands: 609.99,
   },
   {
-    id: 8,
+    id: (Math.random()),
     image:
       "https://www.panmacmillan.co.za/static/3480281e927985f072e210bdece5445c/a6fd0/9781529093643.webp",
     title: "Red Queen",
@@ -72,7 +72,7 @@ let books = [
     rands: 289.99,
   },
   {
-    id: 9,
+    id: (Math.random()),
     image:
       "https://booklounge.co.za/wp-content/uploads/2023/03/marriage-act.jpg",
     title: "The Marriage Act",
@@ -81,7 +81,7 @@ let books = [
     rands: 339.99,
   },
   {
-    id: 10,
+    id: (Math.random()),
     image:
       "https://booklounge.co.za/wp-content/uploads/2023/03/murders-at-fleat-1.jpg",
     title: "The Murders at Fleat House",
@@ -90,7 +90,7 @@ let books = [
     rands: 349.99,
   },
   {
-    id: 11,
+    id: (Math.random()),
     image:
       "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1641926961l/59040894.jpg",
     title: "A Caribbean Heiress in Paris",
@@ -99,7 +99,7 @@ let books = [
     rands: 344.99,
   },
   {
-    id: 12,
+    id: (Math.random()),
     image:
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1638467995i/59345253.jpg",
     title: "Something Wilder",
@@ -108,7 +108,7 @@ let books = [
     rands: 230.99,
   },
   {
-    id: 13,
+    id: (Math.random()),
     image:
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1646064290i/57007967.jpg",
     title: "A Lady for a Duke",
@@ -117,7 +117,7 @@ let books = [
     rands: 199.99,
   },
   {
-    id: 14,
+    id: (Math.random()),
     image:
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1626896884i/57693870.jpg",
     title: "In a New York Minute",
@@ -126,7 +126,7 @@ let books = [
     rands: 229.99,
   },
   {
-    id: 15,
+    id: (Math.random()),
     image:
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1663130429i/60568471.jpg",
     title: "Before I Let Go",
@@ -135,7 +135,7 @@ let books = [
     rands: 324.99,
   },
   {
-    id: 16,
+    id: (Math.random()),
     image:
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1442800485i/18600.jpg",
     title: "Touching the Void",
@@ -144,16 +144,16 @@ let books = [
     rands: 124.99,
   },
   {
-    id: 17,
+    id: (Math.random()),
     image:
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1391329559i/139069.jpg",
-    title: "Endurance: Shackleton's Incredible Voyage",
+    title: "Endurance",
     author: "Alfred Lansing",
     genre: "Adventure",
     rands: 152.99,
   },
   {
-    id: 18,
+    id: (Math.random()),
     image:
       "https://upload.wikimedia.org/wikipedia/en/6/63/Into_the_Wild_%28book%29_cover.png",
     title: "Into the Wild",
@@ -162,7 +162,7 @@ let books = [
     rands: 161.99,
   },
   {
-    id: 19,
+    id: (Math.random()),
     image: "https://m.media-amazon.com/images/I/81mm2kMm5yL.jpg",
     title: "The last season",
     author: "Eric Blehm",
@@ -170,7 +170,7 @@ let books = [
     rands: 215.99,
   },
   {
-    id: 20,
+    id: (Math.random()),
     image:
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388189974i/9791.jpg",
     title: "A Walk in the Woods",
@@ -258,7 +258,7 @@ function addCost() {
     totalCost += item.rands;
   });
 
-  totalPrice.innerHTML = `R${totalCost.toFixed(2)}`;
+  totalPrice.innerHTML = `Total Cost = R${totalCost.toFixed(2)}`;
 };
 
 function removeItem(id) {
@@ -267,13 +267,19 @@ function removeItem(id) {
   cartRefresh();
 };
 
+function checkout() {
+   localStorage.clear(cart);
+   cartItems.innerHTML = "";
+   totalPrice.innerHTML = `Total Cost = R0.00`;
+};
+
 var modal = document.getElementById("modal");
 var btn = document.getElementById("basketLogo");
-var span = document.getElementsByClassName("close")[0];
+var button = document.getElementsByClassName("close")[0];
 btn.onclick = function () {
   modal.style.display = "block";
 };
-span.onclick = function () {
+button.onclick = function () {
   modal.style.display = "none";
 };
 window.onclick = function (event) {
