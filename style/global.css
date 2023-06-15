@@ -102,11 +102,28 @@ main {
   background-color: #262a56;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .products-heading {
   text-align: center;
   color: white;
+}
+
+.top-selling-books {
+  color: white;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 15px;
+}
+
+.sci-fi-div, .thriller-div, .romance-div, .adventure-div {
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .copyright-div {
@@ -341,10 +358,38 @@ footer {
 }
 
 .close {
-  color: #aaa;
+  color: #000000;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 0);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.close:hover {
+  background-color: rgb(255, 182, 55);
+}
+
+.remove-button-div button, .checkout-div button {
+  color: #000000;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 0);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.remove-button-div button:hover, .checkout-div button:hover {
+  background-color: rgb(255, 182, 55);
 }
 
 .products-display-div {
@@ -453,6 +498,15 @@ footer {
 
   .products-title-div h4 {
     margin: 0px;
+  }
+
+  .top-selling-books {
+    color: white;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 15px;
   }
 }
 

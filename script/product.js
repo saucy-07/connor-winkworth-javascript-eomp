@@ -218,6 +218,10 @@ let totalPrice = document.getElementById("totalPrice");
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 cartRefresh();
 
+function sortBooks() {
+  books.sort(title);
+}
+
 
 function renderItems() {
   cartItems.innerHTML = "";
